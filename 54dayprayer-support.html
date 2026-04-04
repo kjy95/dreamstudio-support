@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>54일기도 Support</title>
+  <style>
+    :root {
+      --bg: #f7f1e8;
+      --paper: rgba(255, 255, 255, 0.82);
+      --ink: #34251d;
+      --muted: #7f695c;
+      --rose: #c46b73;
+      --line: rgba(52, 37, 29, 0.08);
+      --shadow: 0 18px 48px rgba(84, 55, 39, 0.12);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Apple SD Gothic Neo", "Noto Serif KR", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(228, 161, 120, 0.34), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(196, 107, 115, 0.24), transparent 26%),
+        var(--bg);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    .hero, .card {
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      padding: 40px 28px 32px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      padding: 26px 22px;
+      margin-top: 20px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(196, 107, 115, 0.12);
+      color: var(--rose);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: clamp(32px, 4vw, 46px); line-height: 1.08; margin-bottom: 10px; }
+    h2 { font-size: 24px; margin-bottom: 12px; }
+    h3 { font-size: 18px; margin-bottom: 10px; }
+    .subtitle, .note, ul { color: var(--muted); }
+    ul { margin: 0; padding-left: 18px; }
+    li + li { margin-top: 8px; }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 18px;
+      text-decoration: none;
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--line);
+      margin-top: 10px;
+    }
+
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 20px, 860px); padding-top: 20px; }
+      .hero { padding: 28px 20px 24px; }
+      .card { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="back" href="54dayprayer.html">← 54일기도 안내로 돌아가기</a>
+      <div class="eyebrow">DreamStudio</div>
+      <h1>54일기도 Support</h1>
+      <p class="subtitle">
+        54일기도 앱 사용 중 문의, 오류 제보, 불편 사항, 개선 아이디어가 있다면 아래 연락처로 알려 주세요.
+        보내주신 내용은 앱 개선에 참고됩니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>문의하기</h2>
+      <p class="note">가능하면 기기 정보, iOS 버전, 문제 상황을 함께 적어 주세요.</p>
+      <a class="contact" href="mailto:cheld414@daum.net?subject=54%EC%9D%BC%EA%B8%B0%EB%8F%84%20%EB%AC%B8%EC%9D%98">
+        <strong>cheld414@daum.net</strong>
+      </a>
+      <p class="note" style="margin-top:10px;">앱 내 문의 보내기 기능을 통해서도 의견을 남길 수 있습니다.</p>
+    </section>
+
+    <section class="card">
+      <h3>자주 함께 보내주면 좋은 정보</h3>
+      <ul>
+        <li>사용 중인 기기 모델과 iOS 버전</li>
+        <li>문제가 발생한 화면과 순서</li>
+        <li>구매/복원 문제라면 App Store 계정 상태</li>
+      </ul>
+    </section>
+
+    <p style="margin-top:20px; text-align:center; color:var(--muted);">© DreamStudio</p>
+  </main>
+</body>
+</html>
